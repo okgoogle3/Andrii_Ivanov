@@ -10,8 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
-
 public class LoginTest {
     private static WebDriver driver;
     private static Login login;
@@ -36,19 +34,19 @@ public class LoginTest {
         driver.close();
     }
     @Test
-    public void testSignIn() throws InterruptedException {
+    public void testSignIn(){
         WebElement element;
         driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
         login.signIn("Admin", "admin123");
         transitor.goToUser();
-        newUser.creatingUser("halalah");
+        newUser.creatingUser("halalah3");
         transitor.goToUser();
-        element = userFinder.find("halalah");
+        element = userFinder.find("halalah3");
         if (element == null)
         {
             Assert.fail("This record doesn't exists");
         }
-        userDeleter.deleteUser("halalah");
+        userDeleter.deleteUsers();
 
     }
 }

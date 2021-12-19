@@ -4,11 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-
 public class UserFinder {
-    private WebDriver driver;
-    private By searchUser = By.id("searchSystemUser_userName");
-    private By searchBtn = By.id("searchBtn");
+    private final WebDriver driver;
+    private final By searchUser = By.id("searchSystemUser_userName");
+    private final By searchBtn = By.id("searchBtn");
 
     public UserFinder(WebDriver webDriver) {
         this.driver = webDriver;

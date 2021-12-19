@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 public class Login
 {
-    private WebDriver driver;
-    private By password = By.name("txtPassword");
-    private By submit = By.name("Submit");
-    private By userName = By.name("txtUsername");
+    private final WebDriver driver;
+    private final By password = By.name("txtPassword");
+    private final By submit = By.name("Submit");
+    private final By userName = By.name("txtUsername");
 
 
     public Login(WebDriver webDriver) {
