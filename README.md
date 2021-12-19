@@ -4,4 +4,4 @@
 2. Go to root project directory.
 3. Use command `mvn clean test`
 
-To find reports, check folder %proj%\target\surefire-reports and open .txt file
+To find reports, check folder %proj%\target\surefire-reports and open org.example.LoginTest.txt file
