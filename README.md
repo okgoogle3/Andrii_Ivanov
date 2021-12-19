@@ -1,3 +1,5 @@
 # Andrii_Ivanov
 
-Open project and run LoginTest.java in Test folder
+1. Open cmd.exe
+2. Go to root project directory.
+3. Use command mvn clean test
