@@ -4,19 +4,8 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
 import org.API_Dropbox.Uploader;
 import org.junit.Assert;
-import org.junit.runner.RunWith;
-
-import java.io.IOException;
-
-
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        features = "src/test/java/features"
-)
 
 public class UploadingDefinition {
     private final Uploader uploader;
